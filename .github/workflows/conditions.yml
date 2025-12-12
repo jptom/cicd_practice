@@ -2,7 +2,7 @@ name: Conditions
 on:
   push
 jobs:
-  slip-or-run:
+  skip-or-run:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello"

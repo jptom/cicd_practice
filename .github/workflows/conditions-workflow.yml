@@ -1,0 +1,8 @@
+name: Conditions workflow
+on: push
+jobs:
+  skip-or-run:
+    if: ${{ github.actor == 'jptom' }}
+    runs-on: ubutnu-latest
+    steps:
+      - run: echo "Hello"
